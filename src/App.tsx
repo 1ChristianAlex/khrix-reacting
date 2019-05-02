@@ -1,13 +1,8 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+
 
 export class App extends React.Component{
-  constructor(props:any){
-    super(props)
-    this.Idk = this.Idk.bind(this);
-  }
-  
   public Idk(){
     let arraName = ['React', 'Native','Angular',"Node","Ionic"]
     return (
