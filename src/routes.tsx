@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import { Home } from './pages/Home';
-import { Header } from './components/header';
+import { Header } from './components/Header';
 import { About } from './pages/About';
 
 interface ReactRouter {}
