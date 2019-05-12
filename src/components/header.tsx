@@ -46,12 +46,12 @@ export class Header extends React.Component {
                   Fundadores
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/Christian">
                     Christian Alexsander
-                  </a>
-                  <a className="dropdown-item" href="#">
+                  </Link>
+                  <Link className="dropdown-item" to="/Pedro">
                     Pedro Anjos
-                  </a>
+                  </Link>
                 </div>
               </li>
             </ul>
