@@ -1,7 +1,7 @@
 //$bgColor: #2b2e39;
 $logoColor: #f9dd3c;
 $bgColor: #0d1321;
-$thridColor: #235789;
+$thridColor: #192540;
 @import url('../node_modules/@fortawesome/fontawesome-free/css/all.css');
 @import url('https://fonts.googleapis.com/css?family=Lato:400,400i,700,900i|Permanent+Marker');
 body {
@@ -9,6 +9,14 @@ body {
   background-color: $bgColor;
 }
 header {
+  .navbar-light .navbar-toggler {
+    color: $logoColor;
+    border: 1px solid $logoColor;
+    i,
+    span {
+      color: $logoColor;
+    }
+  }
   background-color: $bgColor;
   .nav-link {
     color: #ffffff !important;
@@ -104,7 +112,7 @@ section.banner-home {
 section.frameworks-home {
   background-color: $bgColor;
   .frameworks-content {
-    margin: 30px;
+    margin: 30px 0;
     .text-title-section {
       text-align: center;
       font-family: 'Permanent Marker', cursive;
@@ -124,7 +132,7 @@ section.frameworks-home {
 section.why-bholder {
   .content-why-section {
     border-top: 1px solid white;
-    padding: 15px 0;
+    padding: 30px 0;
 
     .why-explain {
       color: white;
@@ -138,6 +146,108 @@ section.why-bholder {
       }
       .why-text {
         text-align: center;
+      }
+    }
+  }
+}
+section.last-project {
+  margin: 15px 0;
+  background-color: $thridColor;
+  .content-last-projects {
+    border-top: 1px solid white;
+    padding: 30px 0;
+    .project-splash {
+      margin: 0 auto;
+      width: fit-content;
+      img {
+        margin: 0 auto;
+      }
+    }
+    .project-text {
+      color: white;
+    }
+    .btn-see-more-projects {
+      margin: 10px auto;
+      width: fit-content;
+      button {
+        background-color: $logoColor;
+        color: $bgColor;
+      }
+    }
+  }
+}
+section.comercial {
+  .service-content {
+    text-align: center;
+    .service-icon {
+      margin: 15px 0;
+      i {
+        font-size: 75pt;
+        color: $logoColor;
+      }
+    }
+    .service-text {
+      color: white;
+      h1 {
+        font-size: 13pt;
+        margin: 15px 0;
+      }
+    }
+  }
+}
+section.ContactUs {
+  background-color: $logoColor;
+  padding: 15px 0 45px 0;
+  .text-title-section {
+    color: $bgColor;
+  }
+  .span-contact {
+    text-align: center;
+    font-size: 18pt;
+    #bholder-contato {
+      font-family: 'Permanent Marker', cursive;
+    }
+  }
+  .btn-contato {
+    text-align: center;
+    button {
+      background-color: $bgColor;
+      color: $logoColor;
+      padding: 10px 75px;
+    }
+  }
+}
+footer.footer-section {
+  padding: 30px 0;
+  #bholder-footer {
+    font-family: 'Permanent Marker', cursive;
+    color: $logoColor;
+  }
+  .inc-footer {
+    color: white;
+  }
+  .list-footer-links {
+    list-style: none;
+    padding: 0;
+    a {
+      color: $logoColor;
+    }
+  }
+}
+@media only screen and (max-width: 968px) {
+  section.frameworks-home {
+    .frameworks-content {
+      margin: 30px 0;
+      .framework-all {
+        width: 100%;
+        display: inline-block;
+        margin: 0 auto;
+        .framework-item {
+          float: left;
+          text-align: center;
+          color: white;
+          width: 50% !important;
+        }
       }
     }
   }
