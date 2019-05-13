@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter, Route, Switch } from 'react-router-dom';
-import { Home } from './pages/Home';
-import { Header } from './components/header';
+import { Home } from './pages/--Home';
+import { Header } from './components/Header';
 import { About } from './pages/About';
 import { Footer } from './components/Footer';
 import { Christian } from './pages/Christian';
@@ -18,7 +18,6 @@ export const Routes: React.SFC<ReactRouter> = props => {
         <Route path="/About" component={About} />
         <Route exact path="/Christian" component={Christian} />
         <Route exact path="/Pedro" component={Pedro} />
-        import {Pedro} from './pages/Pedro';
       </Switch>
       <Footer />
     </BrowserRouter>
