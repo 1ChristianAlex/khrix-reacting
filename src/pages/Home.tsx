@@ -5,6 +5,7 @@ import { WhyBholder } from '../components/home-components/WhyBholder';
 import { LastProject } from '../components/home-components/LastProject';
 import { ComercialService } from '../components/home-components/ComercialService';
 import { ContactUs } from '../components/home-components/ContactUs';
+import { LastMediaContent } from '../components/home-components/LastMediaContent';
 
 export class Home extends React.Component {
   constructor(props: any) {
@@ -15,6 +16,7 @@ export class Home extends React.Component {
       <>
         <Banners />
         <main className="main-section">
+          <LastMediaContent />
           <FrameworksUsed />
           <WhyBholder />
           <LastProject />

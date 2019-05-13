@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 
 export class Header extends React.Component {
   constructor(props: any) {
@@ -10,9 +10,13 @@ export class Header extends React.Component {
       <header>
         <nav className="navbar navbar-expand-lg navbar-light">
           <div className="logo-content">
-            <Link className="navbar-brand logo" to="/">
+            <NavLink
+              className="navbar-brand logo"
+              to="/"
+              activeClassName="selected-link"
+            >
               BHOLDER
-            </Link>
+            </NavLink>
           </div>
           <button
             className="navbar-toggler"
@@ -29,9 +33,31 @@ export class Header extends React.Component {
           <div className="collapse navbar-collapse" id="navbarSupportedContent">
             <ul className="navbar-nav">
               <li className="nav-item">
-                <Link className="nav-link" to="/About">
+                <NavLink
+                  className="nav-link"
+                  to="/Podcast"
+                  activeClassName="selected-link"
+                >
+                  Podcast
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  to="/Blog"
+                  activeClassName="selected-link"
+                >
+                  Blog
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link"
+                  to="/About"
+                  activeClassName="selected-link"
+                >
                   Sobre
-                </Link>
+                </NavLink>
               </li>
               <li className="nav-item dropdown">
                 <a
@@ -46,12 +72,20 @@ export class Header extends React.Component {
                   Fundadores
                 </a>
                 <div className="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <Link className="dropdown-item" to="/Christian">
+                  <NavLink
+                    className="dropdown-item"
+                    to="/Christian"
+                    activeClassName="selected-link"
+                  >
                     Christian Alexsander
-                  </Link>
-                  <Link className="dropdown-item" to="/Pedro">
+                  </NavLink>
+                  <NavLink
+                    className="dropdown-item"
+                    to="/Pedro"
+                    activeClassName="selected-link"
+                  >
                     Pedro Anjos
-                  </Link>
+                  </NavLink>
                 </div>
               </li>
             </ul>

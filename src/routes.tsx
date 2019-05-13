@@ -4,8 +4,10 @@ import { Home } from './pages/Home';
 import { Header } from './components/Header';
 import { About } from './pages/About';
 import { Footer } from './components/Footer';
-import { Christian } from './pages/Christian';
-import { Pedro } from './pages/Pedro';
+import { Founders } from './pages/Founders';
+import { Podcast } from './pages/Podcast';
+import { Blog } from './pages/Blog';
+import { SinglePostBlog } from './pages/SinglePostBlog';
 
 interface ReactRouter {}
 
@@ -16,8 +18,15 @@ export const Routes: React.SFC<ReactRouter> = props => {
       <Switch>
         <Route exact path="/" component={Home} />
         <Route path="/About" component={About} />
-        <Route exact path="/Christian" component={Christian} />
-        <Route exact path="/Pedro" component={Pedro} />
+        <Route path="/Podcast" component={Podcast} />
+        <Route path="/Blog" component={Blog} />
+        <Route path="/SinglePostBlog" component={SinglePostBlog} />
+        <Route
+          exact
+          path="/Christian"
+          render={() => <Founders name="Christian" />}
+        />
+        <Route exact path="/Pedro" render={() => <Founders name="Pedro" />} />
       </Switch>
       <Footer />
     </BrowserRouter>

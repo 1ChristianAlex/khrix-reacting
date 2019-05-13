@@ -7,6 +7,7 @@ $thridColor: #192540;
 body {
   font-family: 'Lato', sans-serif;
   background-color: $bgColor;
+  overflow-x: hidden;
 }
 header {
   .navbar-light .navbar-toggler {
@@ -62,6 +63,21 @@ header {
     margin: 0;
     .nav-link {
       font-size: 8pt;
+    }
+  }
+  .selected-link {
+    color: $logoColor !important;
+  }
+}
+section.LastMediaContent {
+  margin: 15px 0;
+  .text-title-section {
+    margin-bottom: 15px;
+  }
+  .media-content {
+    .mediaThumb {
+      border: 1px solid $logoColor;
+      border-radius: 5px;
     }
   }
 }
